@@ -1,0 +1,650 @@
+
+<div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3">
+                <h3>Filter Options</h3>
+                <form id="filter-form">
+                    <div class="mb-3">
+                        <label for="size" class="form-label">Size</label>
+                        <select class="form-select" id="size" name="size">
+                            <option value="">All Sizes</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="price" class="form-label">Price</label>
+                        <select class="form-select" id="price" name="price">
+                            <option value="">All Prices</option>
+                            <option value="low-high">Low to High</option>
+                            <option value="high-low">High to Low</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="color" class="form-label">Color</label>
+                        <select class="form-select" id="color" name="color">
+                            <option value="">All Colors</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Apply Filters</button>
+                </form>
+            </div>
+            <div class="col-md-9">
+                <!-- Product listing goes here -->
+                <!-- Add more content related to shirts here -->
+                <div class="container mt-5">
+                    <h2>All Products Available</h2>
+                    <div class="row">
+                        <!-- we can replace the # with the appropriate link to the product page, although i may just dynamically add it -->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/tshirts/blacktshirt.png" class="card-img-top" alt="Product 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Black T-shirt</h5>
+                                    <p class="card-text">Simple black shirt for everyday life.</p>
+
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Featured Products - This is the beginning of the card layouts-->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/tshirts/tiedye2.png" class="card-img-top" alt="Product 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tie-Dye Tee</h5>
+                                    <p class="card-text">Hand made Tie-Dye tshirt</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/tshirts/graphicClevelandTshirt.png" class="card-img-top"
+                                    alt="Product 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cleveland represents</h5>
+                                    <p class="card-text">T-shirts for Clevelanders </p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/tshirts/plainwhitetshirt.png" class="card-img-top" alt="Product 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">White Tee</h5>
+                                    <p class="card-text">This makes for a nice undershirt.</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/tshirts/tiedye3.png" class="card-img-bottom" alt="Product 5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tie-dye Tee</h5>
+                                    <p class="card-text">Handmade tie-dye t-shirt.</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/tshirts/tiedye4.png" class="card-img-bottom" alt="Product 6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tie-dye Tee</h5>
+                                    <p class="card-text">Handmade Tie-Dye t-shirt</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/tshirts/plainwhitetshirt_women.png" class="card-img-bottom"
+                                    alt="Product 7">
+                                <div class="card-body">
+                                    <h5 class="card-title">Womens White Tee</h5>
+                                    <p class="card-text">Makes for a great undershirt.</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/tshirts/tiedye5.png" class="card-img-bottom" alt="Product 8">
+                                <div class="card-body">
+                                    <h5 class="card-title">God Stop with the Tye-Dies</h5>
+                                    <p class="card-text">My apologies, whom ever write the title has been sacked</p>
+                                    <a href="#" class="btn btn-primary">Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/sweaters/cashmere_sweater.png" class="card-img-top" alt="Product 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cashmere Sweater</h5>
+                                    <p class="card-text">classic cashmere sweater</p>
+
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Featured Products - This is the beginning of the card layouts-->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/sweaters/cashmere_sweater_turtleneck.png" class="card-img-top"
+                                    alt="Product 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Turtle Neck Sweater</h5>
+                                    <p class="card-text">Turtle neck sweater for colder weather</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/sweaters/grey_hooded_sweater.png" class="card-img-top"
+                                    alt="Product 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Black Hoodie</h5>
+                                    <p class="card-text">Classical black hoodie with drawstrings</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/sweaters/chunky_knit_sweater.png" class="card-img-top" alt="Product 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Knit Sweater</h5>
+                                    <p class="card-text">Thick hand knit sweater</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/sweaters/knit_cardigan_sweater.png" class="card-img-bottom"
+                                    alt="Product 5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cardigan</h5>
+                                    <p class="card-text">Hand knit cardigans</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/sweaters/sweater_turtleneck_men.png" class="card-img-bottom"
+                                    alt="Product 6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Turtle Neck</h5>
+                                    <p class="card-text">Mens Turtle Neck</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/jeans/relaxed_jeans.png" class=" card-img-top" alt="Product 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Relaxed Jeans</h5>
+                                    <p class="card-text">Desc could be from PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Featured Products - This is the beginning of the card layouts-->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/jeans/boyfriend_jeans.png" class="card-img-top" alt="Product 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Womens Boyfriend Jeans</h5>
+                                    <p class="card-text">Desc could be from PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/jeans/flare_jeans_women.png" class="card-img-top" alt="Product 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Womens Flair Jeans</h5>
+                                    <p class="card-text">Desc could be from PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/jeans/skinnyjeans_normal.png" class="card-img-top" alt="Product 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Skinny Jeans</h5>
+                                    <p class="card-text">Desc could be from PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/jeans/skinnyjeans_ripped.png" class="card-img-bottom" alt="Product 5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Distressed Skinny Jeans</h5>
+                                    <p class="card-text">Desc could be from PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/jeans/slimfit_jeans.png" class="card-img-bottom" alt="Product 6">
+                                <h5 class="card-title">Slim Fit Jeans</h5>
+                                    <p class="card-text">Desc could be from PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/pants/beige_cargo1.png" class=" card-img-top" alt="Product 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Beige Cargo</h5>
+                                    <p class="card-text">Desc and Title could be PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Featured Products - This is the beginning of the card layouts-->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/pants/beige_joggers1.png" class="card-img-top" alt="Product 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Beige Joggers</h5>
+                                    <p class="card-text">Desc and Title could be PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/pants/black_joggers1.png" class="card-img-top" alt="Product 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Black Joggers</h5>
+                                    <p class="card-text">Desc and Title could be PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more products following the same structure here if need be-->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/pants/blue_chino.png" class="card-img-top" alt="Product 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Blue Chinos</h5>
+                                    <p class="card-text">Desc and Title could be PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more products following the same structure here if need be-->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/pants/cargo_joggers.png" class="card-img-bottom" alt="Product 5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cargo Joggers</h5>
+                                    <p class="card-text">Desc and Title could be PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more products following the same structure here if need be-->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/pants/corduroy_pants.png" class="card-img-bottom" alt="Product 6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Corduroy Pants</h5>
+                                            <p class="card-text">Desc and Title could be PHP</p>
+                                            <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more products following the same structure here if need be-->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/pants/dresspants_black.png" class="card-img-bottom" alt="Product 6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Classic Dress Pants</h5>
+                                            <p class="card-text">Desc and Title could be PHP</p>
+                                            <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/shorts/beige_shorts.png" class=" card-img-top" alt="Product 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Beige Shorts</h5>
+                                    <p class="card-text">Desc and Title could be PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Featured Products - This is the beginning of the card layouts-->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/shorts/boardshorts_black.png" class=" card-img-top" alt="Product 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Black Board Shorts</h5>
+                                    <p class="card-text">Desc and Title could be PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/shorts/boardshorts_blue.png" class="card-img-top" alt="Product 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Blue Board Shorts</h5>
+                                    <p class="card-text">Desc and Title could be PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more products following the same structure here if need be-->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/shorts/cargo_shorts_men.png" class="card-img-top" alt="Product 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cargo Shorts</h5>
+                                    <p class="card-text">Desc and Title could be PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more products following the same structure here if need be-->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/shorts/denim_shorts_men.png" class="card-img-bottom" alt="Product 5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Denim Shorts</h5>
+                                    <p class="card-text">Desc and Title could be PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more products following the same structure here if need be-->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/shorts/denim_shorts_women.png" class="card-img-bottom" alt="Product 6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Womens Denim Shorts</h5>
+                                    <p class="card-text">Desc and Title could be PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/socks/ankle_socks.png" class=" card-img-top" alt="Product 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ankle Socks</h5>
+                                    <p class="card-text">Desc and Title could be PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Featured Products - This is the beginning of the card layouts-->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/socks/compression_socks.png" class=" card-img-top" alt="Product 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Compression Socks</h5>
+                                    <p class="card-text">Desc and Title could be PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/socks/crew_socks_black.png" class="card-img-top" alt="Product 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Crew Socks</h5>
+                                    <p class="card-text">Desc and Title could be PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more products following the same structure here if need be-->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/socks/morino_wool_socks.png" class="card-img-top" alt="Product 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Morino Wool</h5>
+                                    <p class="card-text">Desc and Title could be PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more products following the same structure here if need be-->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/socks/noshow_socks_all.png" class="card-img-bottom" alt="Product 5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Short No-Show Socks</h5>
+                                    <p class="card-text">Desc and Title could be PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more products following the same structure here if need be-->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/socks/patterned_dress_socks.png" class="card-img-bottom"
+                                    alt="Product 6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Patterned Dress Socks</h5>
+                                    <p class="card-text">Desc and Title could be PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/hats/baseballcap_hat.png" class=" card-img-top" alt="Product 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Baseball Cap</h5>
+                                    <p class="card-text">Desc and Title could be PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Featured Products - This is the beginning of the card layouts-->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/hats/baseballcap_multiple.png" class=" card-img-top" alt="Product 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Three Baseball Caps</h5>
+                                    <p class="card-text">Desc and Title could be PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/hats/beanies_hat.png" class="card-img-top" alt="Product 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Beanie</h5>
+                                    <p class="card-text">Desc and Title could be PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more products following the same structure here if need be-->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/hats/bucket_hat_flamingo.png" class=" card-img-top" alt="Product 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Flamingo Bucket Hat</h5>
+                                    <p class="card-text">Desc and Title could be PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more products following the same structure here if need be-->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/hats/fedora_hat.png" class="card-img-bottom" alt="Product 5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fedora Hat</h5>
+                                    <p class="card-text">Desc and Title could be PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more products following the same structure here if need be-->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/hats/fedora_hat_maroon.png" class="card-img-bottom" alt="Product 6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Maroon Fedora</h5>
+                                    <p class="card-text">Desc and Title could be PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/shoes/dresshoes_brown1.png" class=" card-img-top" alt="Product 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Brown Dress Shoes</h5>
+                                    <p class="card-text">Desc and Title could be PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Featured Products - This is the beginning of the card layouts-->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/shoes/dressshoes_black1.png" class=" card-img-top" alt="Product 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Black Dress Shoes</h5>
+                                    <p class="card-text">Desc and Title could be PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/shoes/leatherboots_black.png" class="card-img-top" alt="Product 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Black Boots</h5>
+                                    <p class="card-text">Desc and Title could be PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more products following the same structure here if need be-->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/shoes/leatherboots_brown.png" class="card-img-top" alt="Product 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Brown Boots</h5>
+                                    <p class="card-text">Desc and Title could be PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more products following the same structure here if need be-->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/shoes/loafers_black.png" class="card-img-bottom" alt="Product 5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Loafers</h5>
+                                    <p class="card-text">Desc and Title could be PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more products following the same structure here if need be-->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/shoes/slip-onsneakers_shoes.png" class="card-img-bottom"
+                                    alt="Product 6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Slip-On Sneakers</h5>
+                                            <p class="card-text">Desc and Title could be PHP</p>
+                                            <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/accessories/aviators_assorted.png" class=" card-img-top"
+                                    alt="Product 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Multiple Sunglasses</h5>
+                                    <p class="card-text">Desc and Title could be PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Featured Products - This is the beginning of the card layouts-->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/accessories/aviators_pink.png" class=" card-img-top" alt="Product 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pink Sunglasses</h5>
+                                    <p class="card-text">Desc and Title could be PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/accessories/aviators_silver.png" class="card-img-top" alt="Product 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Silver Sunglasses</h5>
+                                    <p class="card-text">Desc and Title could be PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more products following the same structure here if need be-->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/accessories/leather_belt.png" class="card-img-top" alt="Product 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Classic Leather Belt</h5>
+                                    <p class="card-text">Desc and Title could be PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more products following the same structure here if need be-->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/accessories/leather_wallet.png" class="card-img-bottom"
+                                    alt="Product 5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Leather Wallet</h5>
+                                    <p class="card-text">Desc and Title could be PHP</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more products following the same structure here if need be, i think 6 is fine-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
