@@ -1,0 +1,87 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+:root {
+  --primary-color: #6a1f4d;
+  /* This is our primary */
+}
+
+.navbar-brand {
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav-link {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  background-color: var(--primary-color);
+}
+
+.navbar .nav-link {
+  color: #251515;
+}
+
+.navbar .nav-link:hover {
+  color: #bbbbbb;
+}
+
+.navbar-brand-img {
+  width: 200px;
+  height: 150px;
+  border-radius: 50%;
+  /* for our logo */
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  /* setting buttons to have the same color*/
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #0a0a0a;
+  /* Choose a slightly different color if we want*/
+  border-color: #903333;
+}
+
+#dynamic-content {
+  padding: 2rem 0;
+  background-color: #f8f9fa;
+  /* this is for when the "shirts" or any other button gets clicked
+  the div it gets loaded into is called "dynamic-content"  */
+}
+
+.container-fluid {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.card-img-top,
+.card-img-bottom {
+  width: 100%;
+  height: 20vw;
+  object-fit: cover;
+  /* for all the cards that display the products */
+}
+
+.form-control {
+  width: 750px;
+  /* for our search bar */
+}
+
+@media screen and (max-width: 768px) {
+  .form-control {
+    width: 100%;
+  }
+  /* changes the search bar based on size of the screen, 
+  this also ensures the "NewsLetter" form is consistent */
+}

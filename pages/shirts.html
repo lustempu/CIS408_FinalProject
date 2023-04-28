@@ -1,0 +1,148 @@
+<!-- shirts.html 
+
+Notes: 
+1) Here have the pricing be shown on the card, and the current "View Pricing" button will be changed to "View Details" and upon clicking it, it will take you to the product page.
+2) May need to add more tshirts to the page, but this is a good start.
+3) Added the filter options, as well as Apply filters, but they are not functional yet. Incorporate the filter options into the PHP code.
+4) Need to add the functionality to the "Add to Cart" button, do this in the PHP code.
+5) Need to add the functionality to the "View Details" button, do this in the PHP code.
+6) need to add product pages for each of the products, and link them to the "View Pricing" button.
+7) repeat these steps for the other pages.
+
+-->
+<div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3">
+                <h3>Filter Options</h3>
+                <form id="filter-form">
+                    <div class="mb-3">
+                        <label for="size" class="form-label">Size</label>
+                        <select class="form-select" id="size" name="size">
+                            <option value="">All Sizes</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="price" class="form-label">Price</label>
+                        <select class="form-select" id="price" name="price">
+                            <option value="">All Prices</option>
+                            <option value="low-high">Low to High</option>
+                            <option value="high-low">High to Low</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="color" class="form-label">Color</label>
+                        <select class="form-select" id="color" name="color">
+                            <option value="">All Colors</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Apply Filters</button>
+                </form>
+            </div>
+            <div class="col-md-9">
+                <!-- Product listing goes here -->
+                <!-- Add more content related to shirts here -->
+                <div class="container mt-5">
+                    <h2>T-Shirts Available</h2>
+                    <div class="row">
+                        <!-- we can replace the # with the appropriate link to the product page, although i may just dynamically add it -->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/tshirts/blacktshirt.png" class="card-img-top" alt="Product 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Black T-shirt</h5>
+                                    <p class="card-text">Simple black shirt for everyday life.</p>
+
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Featured Products - This is the beginning of the card layouts-->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/tshirts/tiedye2.png" class="card-img-top" alt="Product 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tie-Dye Tee</h5>
+                                    <p class="card-text">Hand made Tie-Dye tshirt</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/tshirts/graphicClevelandTshirt.png" class="card-img-top"
+                                    alt="Product 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cleveland represents</h5>
+                                    <p class="card-text">T-shirts for Clevelanders </p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/tshirts/plainwhitetshirt.png" class="card-img-top" alt="Product 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">White Tee</h5>
+                                    <p class="card-text">This makes for a nice undershirt.</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/tshirts/tiedye3.png" class="card-img-bottom" alt="Product 5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tie-dye Tee</h5>
+                                    <p class="card-text">Handmade tie-dye t-shirt.</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/tshirts/tiedye4.png" class="card-img-bottom" alt="Product 6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tie-dye Tee</h5>
+                                    <p class="card-text">Handmade Tie-Dye t-shirt</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/tshirts/plainwhitetshirt_women.png" class="card-img-bottom"
+                                    alt="Product 7">
+                                <div class="card-body">
+                                    <h5 class="card-title">Womens White Tee</h5>
+                                    <p class="card-text">Makes for a great undershirt.</p>
+                                    <a href="#" class="btn btn-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <img src="images/tshirts/tiedye5.png" class="card-img-bottom" alt="Product 8">
+                                <div class="card-body">
+                                    <h5 class="card-title">God Stop with the Tye-Dies</h5>
+                                    <p class="card-text">My apologies, whom ever write the title has been sacked</p>
+                                    <a href="#" class="btn btn-primary">Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more products following the same structure here if need be, i think 6 is fine-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
