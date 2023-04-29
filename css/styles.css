@@ -49,6 +49,18 @@ h6,
   /* Choose a slightly different color if we want*/
   border-color: #903333;
 }
+.btn-secondary {
+  margin-top: 10px;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  /* setting buttons to have the same color*/
+}
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #0a0a0a;
+  /* Choose a slightly different color if we want*/
+  border-color: #903333;
+}
 
 #dynamic-content {
   padding: 2rem 0;
