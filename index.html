@@ -108,7 +108,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Skinny Jeans</h5>
                             <p class="card-text">Classic distressed skinny jeans.</p>
-                            <a href="#" class="btn btn-primary">View Details</a>
+                            <a onclick="openPopup(this.parentElement)" class="btn btn-primary">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -119,7 +119,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Tie-Dye Tees</h5>
                             <p class="card-text">Hand made Tie-Dye Tees</p>
-                            <a href="#" class="btn btn-primary">View Details</a>
+                            <a onclick="openPopup(this.parentElement)" class="btn btn-primary">View Details</a>
                             <!--Have the view details be a droppdown button to show pricing and available sizes-->
                         </div>
                     </div>
@@ -130,7 +130,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Cleveland represents</h5>
                             <p class="card-text">T-shirts for Clevelanders </p>
-                            <a href="#" class="btn btn-primary">View Details</a>
+                            <a onclick="openPopup(this.parentElement)" class="btn btn-primary">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -140,7 +140,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Leather Dress Shoes</h5>
                             <p class="card-text">Dress shoes for formal occasions.</p>
-                            <a href="#" class="btn btn-primary">View Details</a>
+                            <a onclick="openPopup(this.parentElement)" class="btn btn-primary">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -150,7 +150,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Bucket Hat</h5>
                             <p class="card-text">Fun flamingo bucket hat.</p>
-                            <a href="#" class="btn btn-primary">View Details</a>
+                            <a onclick="openPopup(this.parentElement)" class="btn btn-primary">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -160,7 +160,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Patterned Dress Socks</h5>
                             <p class="card-text">Comfy and fun dress socks.</p>
-                            <a href="#" class="btn btn-primary">View Details</a>
+                            <a onclick="openPopup(this.parentElement)" class="btn btn-primary">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -170,7 +170,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Board Shorts</h5>
                             <p class="card-text">Slik board shorts for the beach.</p>
-                            <a href="#" class="btn btn-primary">View Details</a>
+                            <a onclick="openPopup(this.parentElement)" class="btn btn-primary">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -180,13 +180,21 @@
                         <div class="card-body">
                             <h5 class="card-title">Aviators</h5>
                             <p class="card-text">Solarized Aviator sunglasses</p>
-                            <a href="#" class="btn btn-primary">View Details</a>
+                            <a onclick="openPopup(this.parentElement)" class="btn btn-primary">View Details</a>
                         </div>
                     </div>
                 </div>
                 <!-- Add more products following the same structure here if need be, i think 8 is fine-->
             </div>
         </div>
+    </div>
+    <div class="popup" id="popup">
+        <h5 class="popupTitle"></h5>
+        <p class="popupText"></p>
+        <p class="popupPrice"></p>
+        <p class="popupSizes"></p>
+        <button type="button" onclick="closePopup()" class="btn btn-primary">Close</button>
+    </div>
     </div><!--  End dynamic content: This is where we will dynamically change the page using AJAX -->
     <!-- Newsletter modal -->
     <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel"
@@ -267,7 +275,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
-
+    <script src="js/popup.js"></script>
     <script src="js/dynamic-content.js"></script>
 </body>
 
