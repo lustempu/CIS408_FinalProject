@@ -1,5 +1,5 @@
 <?php
-$servername = "99.130.55.31"; // Use public IP address ("99.130.55.31") instead of "localhost"
+$servername = "99.130.55.31"; // Use public IP address "99.130.55.31" instead of "localhost"
 $username = "root";
 $password = "";
 $dbname = "clothing_store_db";
