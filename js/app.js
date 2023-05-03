@@ -9,9 +9,9 @@ async function displayData() {
     }
     const productDescriptionElement = await response.json();
     productData = productDescriptionElement; // Save the fetched product data to the global variable
-    productDescriptionElement.forEach((shirt, index) => {
-      const name = shirt.NAME;
-      const description = shirt.DESCRIPTION;
+    productDescriptionElement.forEach((item, index) => {
+      const name = item.NAME;
+      const description = item.DESCRIPTION;
       let productNameElement = document.getElementById(
         `product-name-${index + 1}`
       );
@@ -24,7 +24,7 @@ async function displayData() {
       }
     });
   } catch (error) {
-    console.error("Error fetching shirt data:", error);
+    console.error("Error fetching item data:", error);
   }
 }
 
