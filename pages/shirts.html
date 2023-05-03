@@ -61,8 +61,10 @@ Notes:
                                 <div class="card-body">
                                     <h5 id="product-name-1" class="card-title">White T-shirt</h5>
                                     <p id="product-description-1" class="card-text">PHP SCRIPT.</p>
-                                    <a onclick="openPopup(this.parentElement, 0)" class="btn btn-primary">View
+                                    <a onclick="openPopup(this.parentElement.parentElement, 0, this.parentElement.parentElement.querySelector('.card-img-top'))"
+                                        class="btn btn-primary">View
                                         Pricing</a>
+
                                 </div>
                             </div>
                         </div>
@@ -72,7 +74,8 @@ Notes:
                                 <div class="card-body">
                                     <h5 id="product-name-2" class="card-title">Graphic Print T-Shirt SCRIPT</h5>
                                     <p id="product-description-2" class="card-text">PHP SCRIPT.</p>
-                                    <a onclick="openPopup(this.parentElement, 1)" class="btn btn-primary">View
+                                    <a onclick="openPopup(this.parentElement.parentElement, 1, this.parentElement.parentElement.querySelector('.card-img-top'))"
+                                        class="btn btn-primary">View
                                         Pricing</a>
                                 </div>
                             </div>
@@ -84,7 +87,8 @@ Notes:
                                 <div class="card-body">
                                     <h5 id="product-name-3" class="card-title">PHP SCRIPT</h5>
                                     <p id="product-description-3" class="card-text">PHP SCRIPT.</p>
-                                    <a onclick="openPopup(this.parentElement, 2)" class="btn btn-primary">View
+                                    <a onclick="openPopup(this.parentElement.parentElement, 2, this.parentElement.parentElement.querySelector('.card-img-top'))"
+                                        class="btn btn-primary">View
                                         Pricing</a>
                                 </div>
                             </div>
@@ -92,22 +96,24 @@ Notes:
 
                         <div class="col-sm-6 col-md-4 col-lg-3">
                             <div class="card">
-                                <img src="images/tshirts/pocket_tshirt.png" class="card-img-bottom" alt="Product 4">
+                                <img src="images/tshirts/pocket_tshirt.png" class="card-img-top" alt="Product 4">
                                 <div class="card-body">
                                     <h5 id="product-name-4" class="card-title">PHP SCRIPT</h5>
                                     <p id="product-description-4" class="card-text">PHP SCRIPT.</p>
-                                    <a onclick="openPopup(this.parentElement, 3)" class="btn btn-primary">View
+                                    <a onclick="openPopup(this.parentElement.parentElement, 3, this.parentElement.parentElement.querySelector('.card-img-top'))"
+                                        class="btn btn-primary">View
                                         Pricing</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3">
                             <div class="card">
-                                <img src="images/tshirts/red_longsleeve.png" class="card-img-bottom" alt="Product 5">
+                                <img src="images/tshirts/red_longsleeve.png" class="card-img-top" alt="Product 5">
                                 <div class="card-body">
                                     <h5 id="product-name-5" class="card-title">PHP SCRIPT</h5>
                                     <p id="product-description-5" class="card-text">PHP SCRIPT.</p>
-                                    <a onclick="openPopup(this.parentElement, 4)" class="btn btn-primary">View
+                                    <a onclick="openPopup(this.parentElement.parentElement, 4, this.parentElement.parentElement.querySelector('.card-img-top'))"
+                                        class="btn btn-primary">View
                                         Pricing</a>
                                 </div>
                             </div>
@@ -118,38 +124,39 @@ Notes:
                                 <div class="card-body">
                                     <h5 id="product-name-6" class="card-title">PHP SCRIPT</h5>
                                     <p id="product-description-6" class="card-text">PHP SCRIPT.</p>
-                                    <a onclick="openPopup(this.parentElement, 5)" class="btn btn-primary">View
+                                    <a onclick="openPopup(this.parentElement.parentElement, 5, this.parentElement.parentElement.querySelector('.card-img-top'))"
+                                        class="btn btn-primary">View
                                         Pricing</a>
                                 </div>
                             </div>
-                        </div>
+                        </div> <!-- Add more products following the same structure here if need be, i think 6 is fine-->
                         <div class="col-sm-6 col-md-4 col-lg-3">
                             <div class="card">
-                                <img src="images/tshirts/tiedye2.png" class="card-img-bottom" alt="Product 7">
+                                <img src="images/tshirts/tiedye2.png" class="card-img-top" alt="Product 7">
                                 <div class="card-body">
-                                    <h5 id="product-name-7" class="card-title">PHP SCRIPT</h5>
-                                    <p id="product-description-7" class="card-text">PHP SCRIPT.</p>
-                                    <a onclick="openPopup(this.parentElement, 6)" class="btn btn-primary">View
+                                    <h5 id="product-name-7" class="card-title">Placeholder text</h5>
+                                    <p id="product-description-7" class="card-text">Placeholder text.</p>
+                                    <a onclick="openPopup(this.parentElement.parentElement, 6, this.parentElement.parentElement.querySelector('.card-img-top'))"
+                                        class="btn btn-primary">View
                                         Pricing</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3">
                             <div class="card">
-                                <img src="images/tshirts/red_polo_shirt.png" class="card-img-bottom" alt="Product 8">
+                                <img src="images/tshirts/red_polo_shirt.png" class="card-img-top" alt="Product 8">
                                 <div class="card-body">
                                     <h5 id="product-name-8" class="card-title">Red Polo Shirt</h5>
                                     <p id="product-description-8" class="card-text">PHP SCRIPT.</p>
-                                    <a onclick="openPopup(this.parentElement, 7)" class="btn btn-primary">View
+                                    <a onclick="openPopup(this.parentElement.parentElement, 7, this.parentElement.parentElement.querySelector('.card-img-top'))"
+                                        class="btn btn-primary">View
                                         Pricing</a>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Add more products following the same structure here if need be, i think 6 is fine-->
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>

@@ -67,11 +67,11 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"
-                                onclick="loadContent('pages/shoes.html', dispatchData)">Shoes</a>
+                                onclick="loadContent('pages/shoes.html', displayData)">Shoes</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"
-                                onclick="loadContent('pages/accessories.html', dispatchData)">Accessories</a>
+                                onclick="loadContent('pages/accessories.html', displayData)">Accessories</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#footer">Contact</a>
@@ -202,11 +202,13 @@
         <p class="popupText"></p>
         <p class="popupPrice"></p>
         <p class="popupSizes"></p>
+        <img class="popupImage" src="" alt="ProductImage" />
         <button type="button" onclick="closePopup()" class="btn btn-primary">Close</button>
         <button type="button" class="btn btn-primary" value="Add to Cart" onclick="cartAction('add')">Add To
             Cart</button>
     </div>
-    </div><!--  End dynamic content: This is where we will dynamically change the page using AJAX -->
+
+    <!--  End dynamic content: This is where we will dynamically change the page using AJAX -->
     <!-- Newsletter modal -->
     <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel"
         aria-hidden="true">

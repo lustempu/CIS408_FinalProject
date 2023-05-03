@@ -106,6 +106,15 @@ h6,
   transition: all 0.25s ease;
 }
 
+.popupImage {
+  /*this needs to fit in the popupbox*/
+  width: 100px;
+  height: 150px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
 .open-popup {
   visibility: visible;
   transform: translate(-50%, -50%) scale(1);
