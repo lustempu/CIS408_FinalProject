@@ -7,9 +7,9 @@ async function displayData() {
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
-    const shirts = await response.json();
-    productData = shirts; // Save the fetched product data to the global variable
-    shirts.forEach((shirt, index) => {
+    const productDescriptionElement = await response.json();
+    productData = productDescriptionElement; // Save the fetched product data to the global variable
+    productDescriptionElement.forEach((shirt, index) => {
       const name = shirt.NAME;
       const description = shirt.DESCRIPTION;
       let productNameElement = document.getElementById(
