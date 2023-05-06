@@ -42,7 +42,7 @@
 
                         <li class="nav-item">
                             <a class="nav-link" href="#"
-                                onclick="loadContent('pages/shirts.html','dynamic-content', displayData, false)">Shirts</a>
+                                onclick="loadContent('pages/shirts.html','dynamic-content', displayData)">Shirts</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"
@@ -211,7 +211,7 @@
         <p class="popupSizes"></p>
         <img class="popupImage" src="" alt="ProductImage" />
         <button type="button" onclick="closePopup()" class="btn btn-primary">Close</button>
-        <button type="button" class="btn btn-primary" value="Add to Cart" onclick="addToCart(currentIndex)">Add To
+        <button type="button" class="btn btn-primary" value="Add to Cart" onclick="addToCart(currentIndex-1)">Add To
             Cart</button>
     </div>
 
