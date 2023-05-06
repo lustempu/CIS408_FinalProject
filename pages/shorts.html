@@ -1,122 +1,85 @@
-<div>
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-3">
-                <h3>Filter Options</h3>
-                <form id="filter-form">
-                    <div class="mb-3">
-                        <label for="size" class="form-label">Size</label>
-                        <select class="form-select" id="size" name="size">
-                            <option value="">All Sizes</option>
-                            <option value="S">S</option>
-                            <option value="M">M</option>
-                            <option value="L">L</option>
-                            <option value="XL">XL</option>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <label for="price" class="form-label">Price</label>
-                        <select class="form-select" id="price" name="price">
-                            <option value="">All Prices</option>
-                            <option value="low-high">Low to High</option>
-                            <option value="high-low">High to Low</option>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <label for="color" class="form-label">Color</label>
-                        <select class="form-select" id="color" name="color">
-                            <option value="">All Colors</option>
-                            <option value="black">Black</option>
-                            <option value="white">White</option>
-                            <option value="red">Red</option>
-                            <option value="blue">Blue</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Apply Filters</button>
-                </form>
+<div class="container mt-5">
+    <h2>Shorts Available</h2>
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card" data-id="32">
+                <img src="images/shorts/beige_cargo_shorts.png" class="card-img-top" alt="Product 4">
+                <div class="card-body">
+                    <h5 id="product-name-32" class="card-title">Cargo Shorts</h5>
+                    <p id="product-description-32" class="card-text">Desc and Title could be PHP</p>
+                    <a onclick="openPopup(this.parentElement.parentElement,this.parentElement.parentElement.querySelector('.card-img-top'))"
+                        class="btn btn-primary">View Pricing</a>
+                </div>
             </div>
-            <div class="col-md-9">
-                <!-- Product listing goes here -->
-                <!-- Add more content related to shirts here -->
-                <div class="container mt-5">
-                    <h2>Shorts Available</h2>
-                    <div class="row">
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="card">
-                                <img src="images/shorts/beige_cargo_shorts.png" class="card-img-top" alt="Product 4">
-                                <div class="card-body">
-                                    <h5 id="product-name-32" class="card-title">Cargo Shorts</h5>
-                                    <p id="product-description-32" class="card-text">Desc and Title could be PHP</p>
-                                    <a onclick="openPopup(this.parentElement, 31, this.parentElement.parentElement.querySelector('.card-img-top'))" class="btn btn-primary">View Pricing</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="card">
-                                <img src="images/shorts/denim_shorts_women.png" class="card-img-bottom" alt="Product 6">
-                                <div class="card-body">
-                                    <h5 id="product-name-33" class="card-title">Womens Denim Shorts</h5>
-                                    <p id="product-description-33" class="card-text">Desc and Title could be PHP</p>
-                                    <a onclick="openPopup(this.parentElement, 32, this.parentElement.parentElement.querySelector('.card-img-top'))" class="btn btn-primary">View Pricing</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Add more products following the same structure here if need be-->
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="card">
-                                <img src="images/shorts/cargo_shorts_men.png" class="card-img-bottom" alt="Product 6">
-                                <div class="card-body">
-                                    <h5 id="product-name-34" class="card-title">Cargo Shorts</h5>
-                                    <p id="product-description-34" class="card-text">Desc and Title could be PHP</p>
-                                    <a onclick="openPopup(this.parentElement, 33, this.parentElement.parentElement.querySelector('.card-img-top'))" class="btn btn-primary">View Pricing</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="card">
-                                <img src="images/shorts/boardshorts_black.png" class=" card-img-top" alt="Product 2">
-                                <div class="card-body">
-                                    <h5 id="product-name-35" class="card-title">Black Board Shorts</h5>
-                                    <p id="product-description-35" class="card-text">Desc and Title could be PHP</p>
-                                    <a onclick="openPopup(this.parentElement, 34, this.parentElement.parentElement.querySelector('.card-img-top'))" class="btn btn-primary">View Pricing</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="card">
-                                <img src="images/shorts/denim_shorts_men.png" class=" card-img-top" alt="Product 2">
-                                <div class="card-body">
-                                    <h5 id="product-name-36" class="card-title">Denim shorts</h5>
-                                    <p id="product-description-36" class="card-text">Desc and Title could be PHP</p>
-                                    <a onclick="openPopup(this.parentElement,35, this.parentElement.parentElement.querySelector('.card-img-top'))" class="btn btn-primary">View Pricing</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Add more products following the same structure here if need be-->
-                        <!-- we can replace the # with the appropriate link to the product page, although i may just dynamically add it -->
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="card">
-                                <img src="images/shorts/beige_shorts.png" class=" card-img-top" alt="Product 1">
-                                <div class="card-body">
-                                    <h5 id="product-name-37" class="card-title">Beige Shorts</h5>
-                                    <p id="product-description-37" class="card-text">Desc and Title could be PHP</p>
-                                    <a onclick="openPopup(this.parentElement, 36, this.parentElement.parentElement.querySelector('.card-img-top'))" class="btn btn-primary">View Pricing</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Featured Products - This is the beginning of the card layouts-->
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card" data-id="33">
+                <img src="images/shorts/denim_shorts_women.png" class="card-img-top" alt="Product 6">
+                <div class="card-body">
+                    <h5 id="product-name-33" class="card-title">Womens Denim Shorts</h5>
+                    <p id="product-description-33" class="card-text">Desc and Title could be PHP</p>
+                    <a onclick="openPopup(this.parentElement.parentElement, this.parentElement.parentElement.querySelector('.card-img-top'))"
+                        class="btn btn-primary">View Pricing</a>
+                </div>
+            </div>
+        </div>
+        <!-- Add more products following the same structure here if need be-->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card" data-id="34">
+                <img src="images/shorts/cargo_shorts_men.png" class="card-img-top" alt="Product 6">
+                <div class="card-body">
+                    <h5 id="product-name-34" class="card-title">Cargo Shorts</h5>
+                    <p id="product-description-34" class="card-text">Desc and Title could be PHP</p>
+                    <a onclick="openPopup(this.parentElement.parentElement, this.parentElement.parentElement.querySelector('.card-img-top'))"
+                        class="btn btn-primary">View Pricing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card" data-id="35">
+                <img src="images/shorts/boardshorts_black.png" class=" card-img-top" alt="Product 2">
+                <div class="card-body">
+                    <h5 id="product-name-35" class="card-title">Black Board Shorts</h5>
+                    <p id="product-description-35" class="card-text">Desc and Title could be PHP</p>
+                    <a onclick="openPopup(this.parentElement.parentElement, this.parentElement.parentElement.querySelector('.card-img-top'))"
+                        class="btn btn-primary">View Pricing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card" data-id="36">
+                <img src="images/shorts/denim_shorts_men.png" class=" card-img-top" alt="Product 2">
+                <div class="card-body">
+                    <h5 id="product-name-36" class="card-title">Denim shorts</h5>
+                    <p id="product-description-36" class="card-text">Desc and Title could be PHP</p>
+                    <a onclick="openPopup(this.parentElement.parentElement,this.parentElement.parentElement.querySelector('.card-img-top'))"
+                        class="btn btn-primary">View Pricing</a>
+                </div>
+            </div>
+        </div>
+        <!-- Add more products following the same structure here if need be-->
+        <!-- we can replace the # with the appropriate link to the product page, although i may just dynamically add it -->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card" data-id="37">
+                <img src="images/shorts/beige_shorts.png" class=" card-img-top" alt="Product 1">
+                <div class="card-body">
+                    <h5 id="product-name-37" class="card-title">Beige Shorts</h5>
+                    <p id="product-description-37" class="card-text">Desc and Title could be PHP</p>
+                    <a onclick="openPopup(this.parentElement.parentElement, this.parentElement.parentElement.querySelector('.card-img-top'))"
+                        class="btn btn-primary">View Pricing</a>
+                </div>
+            </div>
+        </div>
+        <!--Featured Products - This is the beginning of the card layouts-->
 
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="card">
-                                <img src="images/shorts/boardshorts_blue.png" class="card-img-top" alt="Product 3">
-                                <div class="card-body">
-                                    <h5 id="product-name-38" class="card-title">Blue Board Shorts</h5>
-                                    <p id="product-description-38" class="card-text">Desc and Title could be PHP</p>
-                                    <a onclick="openPopup(this.parentElement, 37, this.parentElement.parentElement.querySelector('.card-img-top'))" class="btn btn-primary">View Pricing</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card" data-id="38">
+                <img src="images/shorts/boardshorts_blue.png" class="card-img-top" alt="Product 3">
+                <div class="card-body">
+                    <h5 id="product-name-38" class="card-title">Blue Board Shorts</h5>
+                    <p id="product-description-38" class="card-text">Desc and Title could be PHP</p>
+                    <a onclick="openPopup(this.parentElement.parentElement, this.parentElement.parentElement.querySelector('.card-img-top'))"
+                        class="btn btn-primary">View Pricing</a>
                 </div>
             </div>
         </div>

@@ -1,131 +1,95 @@
-<div>
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-3">
-                <h3>Filter Options</h3>
-                <form id="filter-form">
-                    <div class="mb-3">
-                        <label for="size" class="form-label">Size</label>
-                        <select class="form-select" id="size" name="size">
-                            <option value="">All Sizes</option>
-                            <option value="S">S</option>
-                            <option value="M">M</option>
-                            <option value="L">L</option>
-                            <option value="XL">XL</option>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <label for="price" class="form-label">Price</label>
-                        <select class="form-select" id="price" name="price">
-                            <option value="">All Prices</option>
-                            <option value="low-high">Low to High</option>
-                            <option value="high-low">High to Low</option>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <label for="color" class="form-label">Color</label>
-                        <select class="form-select" id="color" name="color">
-                            <option value="">All Colors</option>
-                            <option value="black">Black</option>
-                            <option value="white">White</option>
-                            <option value="red">Red</option>
-                            <option value="blue">Blue</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Apply Filters</button>
-                </form>
+<div class="container mt-5">
+    <h2>Pants Available</h2>
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card" data-id="24">
+                <img src="images/pants/dresspants_black.png" class="card-img-top" alt="Product 6">
+                <div class="card-body">
+                    <h5 id="product-name-24" class="card-title">PlaceHolder Title</h5>
+                    <p id="prodcut-description-24" class="card-text">Placeholder Text</p>
+                    <a onclick="openPopup(this.parentElement.parentElement, this.parentElement.parentElement.querySelector('.card-img-top'))"
+                        class="btn btn-primary">View Pricing</a>
+                </div>
             </div>
-            <div class="col-md-9">
-                <!-- Product listing goes here -->
-                <!-- Add more content related to shirts here -->
-                <div class="container mt-5">
-                    <h2>Pants Available</h2>
-                    <div class="row">
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="card">
-                                <img src="images/pants/dresspants_black.png" class="card-img-bottom" alt="Product 6">
-                                <div class="card-body">
-                                    <h5 id="product-name-24" class="card-title">PlaceHolder Title</h5>
-                                    <p id="prodcut-description-24" class="card-text">Placeholder Text</p>
-                                    <a onclick="openPopup(this.parentElement, 23, this.parentElement.parentElement.querySelector('.card-img-top'))" class="btn btn-primary">View Pricing</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="card">
-                                <img src="images/pants/grey_joggers1.png" class="card-img-bottom" alt="Product 6">
-                                <div class="card-body">
-                                    <h5 id="product-name-25" class="card-title">PlaceHolder Title</h5>
-                                    <p id="prodcut-description-25" class="card-text">Placeholder Text</p>
-                                    <a onclick="openPopup(this.parentElement, 24, this.parentElement.parentElement.querySelector('.card-img-top'))" class="btn btn-primary">View Pricing</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="card">
-                                <img src="images/pants/black_cropped_trousers.png" class="card-img-bottom"
-                                    alt="Product 6">
-                                <div class="card-body">
-                                    <h5 id="product-name-26" class="card-title">PlaceHolder Title</h5>
-                                    <p id="prodcut-description-26" class="card-text">Placeholder Text</p>
-                                    <a onclick="openPopup(this.parentElement, 25,this.parentElement.parentElement.querySelector('.card-img-top'))" class="btn btn-primary">View Pricing</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="card">
-                                <img src="images/pants/black_joggers1.png" class="card-img-top" alt="Product 3">
-                                <div class="card-body">
-                                    <h5 id="product-name-27" class="card-title">PlaceHolder Title</h5>
-                                    <p id="prodcut-description-27" class="card-text">Placeholder Text</p>
-                                    <a onclick="openPopup(this.parentElement, 26, this.parentElement.parentElement.querySelector('.card-img-top'))" class="btn btn-primary">View Pricing</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="card">
-                                <img src="images/pants/corduroy_pants.png" class="card-img-bottom" alt="Product 6">
-                                <div class="card-body">
-                                    <h5 id="product-name-28" class="card-title">PlaceHolder Title</h5>
-                                    <p id="prodcut-description-28" class="card-text">Placeholder Text</p>
-                                    <a onclick="openPopup(this.parentElement, 27, this.parentElement.parentElement.querySelector('.card-img-top'))" class="btn btn-primary">View Pricing</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Add more products following the same structure here if need be-->
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="card">
-                                <img src="images/pants/blue_chino.png" class="card-img-top" alt="Product 4">
-                                <div class="card-body">
-                                    <h5 id="product-name-29" class="card-title">PlaceHolder Title</h5>
-                                    <p id="prodcut-description-29" class="card-text">Placeholder Text</p>
-                                    <a onclick="openPopup(this.parentElement, 28, this.parentElement.parentElement.querySelector('.card-img-top'))" class="btn btn-primary">View Pricing</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- we can replace the # with the appropriate link to the product page, although i may just dynamically add it -->
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="card">
-                                <img src="images/pants/cropped_wideleg_pants_women.png" class="card-img-top"
-                                    alt="Product 2">
-                                <div class="card-body">
-                                    <h5 id="product-name-30" class="card-title">PlaceHolder Title</h5>
-                                    <p id="prodcut-description-30" class="card-text">Placeholder Text</p>
-                                    <a onclick="openPopup(this.parentElement, 29, this.parentElement.parentElement.querySelector('.card-img-top'))" class="btn btn-primary">View Pricing</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="card">
-                                <img src="images/pants/beige_cargo1.png" class=" card-img-top" alt="Product 1">
-                                <div class="card-body">
-                                    <h5 id="product-name-31" class="card-title">PlaceHolder Title</h5>
-                                    <p id="prodcut-description-31" class="card-text">Placeholder Text</p>
-                                    <a onclick="openPopup(this.parentElement, 30, this.parentElement.parentElement.querySelector('.card-img-top'))" class="btn btn-primary">View Pricing</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card" data-id="25">
+                <img src="images/pants/grey_joggers1.png" class="card-img-top" alt="Product 6">
+                <div class="card-body">
+                    <h5 id="product-name-25" class="card-title">Grey Jogger Pants</h5>
+                    <p id="prodcut-description-25" class="card-text">A pair of grey jogger pants</p>
+                    <a onclick="openPopup(this.parentElement.parentElement,  this.parentElement.parentElement.querySelector('.card-img-top'))"
+                        class="btn btn-primary">View Pricing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card" data-id="26">
+                <img src="images/pants/black_cropped_trousers.png" class="card-img-top" alt="Product 6">
+                <div class="card-body">
+                    <h5 id="product-name-26" class="card-title">Black Cropped Trousers</h5>
+                    <p id="prodcut-description-26" class="card-text">A pair of cropped trousers</p>
+                    <a onclick="openPopup(this.parentElement.parentElement,this.parentElement.parentElement.querySelector('.card-img-top'))"
+                        class="btn btn-primary">View Pricing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card" data-id="27">
+                <img src="images/pants/black_joggers1.png" class="card-img-top" alt="Product 3">
+                <div class="card-body">
+                    <h5 id="product-name-27" class="card-title">Black Drawstring Joggers</h5>
+                    <p id="prodcut-description-27" class="card-text">A pair of joggers with a drawstring waistband</p>
+                    <a onclick="openPopup(this.parentElement.parentElement,this.parentElement.parentElement.querySelector('.card-img-top'))"
+                        class="btn btn-primary">View Pricing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card" data-id="28">
+                <img src="images/pants/corduroy_pants.png" class="card-img-top" alt="Product 6">
+                <div class="card-body">
+                    <h5 id="product-name-28" class="card-title">Beige Corduroy Pants</h5>
+                    <p id="prodcut-description-28" class="card-text">A pair of corduroy pants</p>
+                    <a onclick="openPopup(this.parentElement.parentElement,this.parentElement.parentElement.querySelector('.card-img-top'))"
+                        class="btn btn-primary">View Pricing</a>
+                </div>
+            </div>
+        </div>
+        <!-- Add more products following the same structure here if need be-->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card" data-id="29">
+                <img src="images/pants/blue_chino.png" class="card-img-top" alt="Product 4">
+                <div class="card-body">
+                    <h5 id="product-name-29" class="card-title">Blue Chinos</h5>
+                    <p id="prodcut-description-29" class="card-text">A pair of chinos in a classic blue</p>
+                    <a onclick="openPopup(this.parentElement.parentElement, this.parentElement.parentElement.querySelector('.card-img-top'))"
+                        class="btn btn-primary">View Pricing</a>
+                </div>
+            </div>
+        </div>
+        <!-- we can replace the # with the appropriate link to the product page, although i may just dynamically add it -->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card" data-id="30">
+                <img src="images/pants/cropped_wideleg_pants_women.png" class="card-img-top" alt="Product 2">
+                <div class="card-body">
+                    <h5 id="product-name-30" class="card-title">White Cropped Wide Leg Pants</h5>
+                    <p id="prodcut-description-30" class="card-text">
+                        A pair cropped wide leg</p>
+                    <a onclick="openPopup(this.parentElement.parentElement,this.parentElement.parentElement.querySelector('.card-img-top'))"
+                        class="btn btn-primary">View Pricing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card" data-id="31">
+                <img src="images/pants/beige_cargo1.png" class=" card-img-top" alt="Product 1">
+                <div class="card-body">
+                    <h5 id="product-name-31" class="card-title">Beige Cargo Joggers</h5>
+                    <p id="prodcut-description-31" class="card-text">A pair of cargo joggers with pockets for storage
+                    </p>
+                    <a onclick="openPopup(this.parentElement.parentElement,this.parentElement.parentElement.querySelector('.card-img-top'))"
+                        class="btn btn-primary">View Pricing</a>
                 </div>
             </div>
         </div>

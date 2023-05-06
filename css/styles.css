@@ -65,6 +65,8 @@ h6,
 #dynamic-content {
   padding: 2rem 0;
   background-color: #f8f9fa;
+  /*I want to center all the things in this html*/
+
   /* this is for when the "shirts" or any other button gets clicked
   the div it gets loaded into is called "dynamic-content"  */
 }
@@ -126,4 +128,17 @@ h6,
   }
   /* changes the search bar based on size of the screen, 
   this also ensures the "NewsLetter" form is consistent */
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-direction: row;
+}
+.card-body {
+  flex: 1;
+  padding: 0.5rem;
+  justify-content: space-around;
+  align-items: stretch;
 }

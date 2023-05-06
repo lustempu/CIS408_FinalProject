@@ -1,138 +1,95 @@
-<div>
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-3">
-                <h3>Filter Options</h3>
-                <form id="filter-form">
-                    <div class="mb-3">
-                        <label for="size" class="form-label">Size</label>
-                        <select class="form-select" id="size" name="size">
-                            <option value="">All Sizes</option>
-                            <option value="S">S</option>
-                            <option value="M">M</option>
-                            <option value="L">L</option>
-                            <option value="XL">XL</option>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <label for="price" class="form-label">Price</label>
-                        <select class="form-select" id="price" name="price">
-                            <option value="">All Prices</option>
-                            <option value="low-high">Low to High</option>
-                            <option value="high-low">High to Low</option>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <label for="color" class="form-label">Color</label>
-                        <select class="form-select" id="color" name="color">
-                            <option value="">All Colors</option>
-                            <option value="black">Black</option>
-                            <option value="white">White</option>
-                            <option value="red">Red</option>
-                            <option value="blue">Blue</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Apply Filters</button>
-                </form>
-            </div>
-            <div class="col-md-9">
-                <!-- Product listing goes here -->
-                <!-- Add more content related to shirts here -->
-                <div class="container mt-5">
-                    <h2>Sweaters Available</h2>
-                    <div class="row">
-                        <!-- we can replace the # with the appropriate link to the product page, although i may just dynamically add it -->
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="card">
-                                <img src="images/sweaters/blue_vneck_sweater.png" class="card-img-top" alt="Product 9">
-                                <div class="card-body">
-                                    <h5 id="product-name-9" class="card-title">Cashmere Sweater</h5>
-                                    <p id="product-description-9" class="card-text">classic cashmere sweater</p>
-                                    <a onclick="openPopup(this.parentElement,8)" class="btn btn-primary">View
-                                        Pricing</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="card">
-                                <img src="images/sweaters/blue_cashmere_sweater_turtleneck.png" class="card-img-top"
-                                    alt="Product 10">
-                                <div class="card-body">
-                                    <h5 id="product-name-10" class="card-title">Cashmere Sweater</h5>
-                                    <p id="product-description-10" class="card-text">classic cashmere sweater</p>
-                                    <a onclick="openPopup(this.parentElement,9, this.parentElement.parentElement.querySelector('.card-img-top'))" class="btn btn-primary">View
-                                        Pricing</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Featured Products - This is the beginning of the card layouts-->
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="card">
-                                <img src="images/sweaters/red_cashmere_sweater.png" class="card-img-top"
-                                    alt="Product 11">
-                                <div class="card-body">
-                                    <h5 id="product-name-11" class="card-title">Turtle Neck Sweater</h5>
-                                    <p id="product-description-11" class="card-text">Turtle neck sweater for colder
-                                        weather</p>
-                                    <a onclick="openPopup(this.parentElement,10, this.parentElement.parentElement.querySelector('.card-img-top'))" class="btn btn-primary">View
-                                        Pricing</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="card">
-                                <img src="images/sweaters/bluegreen_chunky_knit_sweater.png" class="card-img-top"
-                                    alt="Product 12">
-                                <div class="card-body">
-                                    <h5 id="product-name-12" class="card-title">Knit Sweater</h5>
-                                    <p id="product-description-12" class="card-text">Thick hand knit sweater</p>
-                                    <a onclick="openPopup(this.parentElement, 11, this.parentElement.parentElement.querySelector('.card-img-top'))" class="btn btn-primary">View
-                                        Pricing</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="card">
-                                <img src="images/sweaters/black_hooded_sweater.png" class="card-img-top"
-                                    alt="Product 13">
-                                <div class="card-body">
-                                    <h5 id="product-name-13" class="card-title">Black Hoodie</h5>
-                                    <p id="prodcut-description-13" class="card-text">Classical black hoodie with
-                                        drawstrings</p>
-                                    <a onclick="openPopup(this.parentElement, 12, this.parentElement.parentElement.querySelector('.card-img-top'))" class="btn btn-primary">View
-                                        Pricing</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="card">
-                                <img src="images/sweaters/knit_cardigan_sweater.png" class="card-img-bottom"
-                                    alt="Product 14">
-                                <div class="card-body">
-                                    <h5 id="product-name-14" class="card-title">Cardigan</h5>
-                                    <p id="product-description-14" class="card-text">Hand knit cardigans</p>
-                                    <a onclick="openPopup(this.parentElement, 13, this.parentElement.parentElement.querySelector('.card-img-top'))" class="btn btn-primary">View
-                                        Pricing</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="card">
-                                <img src="images/sweaters/black_sweater_turtleneck_men.png" class="card-img-bottom"
-                                    alt="Product 15">
-                                <div class="card-body">
-                                    <h5 id="product-name-15" class="card-title">Turtle Neck</h5>
-                                    <p id="product-description-15" class="card-text">Mens Turtle Neck</p>
-                                    <a onclick="openPopup(this.parentElement,14, this.parentElement.parentElement.querySelector('.card-img-top'))" class="btn btn-primary">View
-                                        Pricing</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Add more products following the same structure here if need be, i think 6 is fine-->
-                    </div>
+<div class="container mt-5">
+    <h2>Sweaters Available</h2>
+    <div class="row">
+        <!-- we can replace the # with the appropriate link to the product page, although i may just dynamically add it -->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card" data-id="9">
+                <img src="images/sweaters/blue_vneck_sweater.png" class="card-img-top" alt="Product 9">
+                <div class="card-body">
+                    <h5 id="product-name-9" class="card-title">Cashmere Sweater</h5>
+                    <p id="product-description-9" class="card-text">classic cashmere sweater</p>
+                    <a onclick="openPopup(this.parentElement.parentElement,this.parentElement.parentElement.querySelector('.card-img-top'))"
+                        class="btn btn-primary">View
+                        Pricing</a>
                 </div>
             </div>
         </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card" data-id="10">
+                <img src="images/sweaters/blue_cashmere_sweater_turtleneck.png" class="card-img-top" alt="Product 10">
+                <div class="card-body">
+                    <h5 id="product-name-10" class="card-title">Cashmere Sweater</h5>
+                    <p id="product-description-10" class="card-text">classic cashmere sweater</p>
+                    <a onclick="openPopup(this.parentElement.parentElement, this.parentElement.parentElement.querySelector('.card-img-top'))"
+                        class="btn btn-primary">View
+                        Pricing</a>
+                </div>
+            </div>
+        </div>
+        <!--Featured Products - This is the beginning of the card layouts-->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card" data-id="11">
+                <img src="images/sweaters/red_cashmere_sweater.png" class="card-img-top" alt="Product 11">
+                <div class="card-body">
+                    <h5 id="product-name-11" class="card-title">Turtle Neck Sweater</h5>
+                    <p id="product-description-11" class="card-text">Turtle neck sweater for colder
+                        weather</p>
+                    <a onclick="openPopup(this.parentElement.parentElement,this.parentElement.parentElement.querySelector('.card-img-top'))"
+                        class="btn btn-primary">View
+                        Pricing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card" data-id="12">
+                <img src="images/sweaters/bluegreen_chunky_knit_sweater.png" class="card-img-top" alt="Product 12">
+                <div class="card-body">
+                    <h5 id="product-name-12" class="card-title">Knit Sweater</h5>
+                    <p id="product-description-12" class="card-text">Thick hand knit sweater</p>
+                    <a onclick="openPopup(this.parentElement.parentElement,this.parentElement.parentElement.querySelector('.card-img-top'))"
+                        class="btn btn-primary">View
+                        Pricing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card" data-id="13">
+                <img src="images/sweaters/black_hooded_sweater.png" class="card-img-top" alt="Product 13">
+                <div class="card-body">
+                    <h5 id="product-name-13" class="card-title">Black Hoodie</h5>
+                    <p id="prodcut-description-13" class="card-text">Classical black hoodie with
+                        drawstrings</p>
+                    <a onclick="openPopup(this.parentElement.parentElement,this.parentElement.parentElement.querySelector('.card-img-top'))"
+                        class="btn btn-primary">View
+                        Pricing</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card" data-id="14">
+                <img src="images/sweaters/knit_cardigan_sweater.png" class="card-img-top" alt="Product 14">
+                <div class="card-body">
+                    <h5 id="product-name-14" class="card-title">Cardigan</h5>
+                    <p id="product-description-14" class="card-text">Hand knit cardigans</p>
+                    <a onclick="openPopup(this.parentElement.parentElement, this.parentElement.parentElement.querySelector('.card-img-top'))"
+                        class="btn btn-primary">View
+                        Pricing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card" data-id="15">
+                <img src="images/sweaters/black_sweater_turtleneck_men.png" class="card-img-top" alt="Product 15">
+                <div class="card-body">
+                    <h5 id="product-name-15" class="card-title">Turtle Neck</h5>
+                    <p id="product-description-15" class="card-text">Mens Turtle Neck</p>
+                    <a onclick="openPopup(this.parentElement.parentElement, this.parentElement.parentElement.querySelector('.card-img-top'))"
+                        class="btn btn-primary">View
+                        Pricing</a>
+                </div>
+            </div>
+        </div>
+        <!-- Add more products following the same structure here if need be, i think 6 is fine-->
     </div>
 </div>

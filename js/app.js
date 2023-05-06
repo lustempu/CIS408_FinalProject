@@ -12,11 +12,14 @@ async function displayData() {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const productDescriptionElement = await response.json();
-    productData = productDescriptionElement; // the data is returned as an array of objects, so store it in the global variable
+    productData = productDescriptionElement; // the data is returned as an JSON of objects, so store it in the global variable
     productDescriptionElement.forEach((item, index) => {
       // Loop through the array of objects
       const name = item.NAME; // Get the name from the current object
       const description = item.DESCRIPTION; // Get the description from the current object
+
+      //adding these variables for the filter options
+
       let productNameElement = document.getElementById(
         // Get the product name element
         `product-name-${index + 1}` // the index starts at 0, but the product names start at 1, so add 1 to the index
@@ -35,11 +38,21 @@ async function displayData() {
 }
 
 ///////////////////////dynamic-content.js/////////////////////////
-function loadContent(file, callback) {
+function loadContent(file, containerId, callback, removeHeading = false) {
   const xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("dynamic-content").innerHTML = this.responseText;
+      document.getElementById(containerId).innerHTML = this.responseText;
+
+      // Remove the h2 element if removeHeading is true
+      if (removeHeading) {
+        const containerElement = document.getElementById(containerId);
+        const headingElement = containerElement.querySelector("h2");
+        if (headingElement) {
+          containerElement.removeChild(headingElement);
+        }
+      }
+
       if (typeof callback === "function") {
         callback();
       }
@@ -48,25 +61,39 @@ function loadContent(file, callback) {
   xhttp.open("GET", file, true);
   xhttp.send();
 }
+
 ///////////////////////dynamic-content.js/////////////////////////
+///////////////////////Load all products/////////////////////////
+function loadAllProducts() {
+  loadContent("pages/shirts.html", "shirts", displayData);
+  loadContent("pages/sweaters.html", "sweaters", displayData);
+  loadContent("pages/jeans.html", "jeans", displayData);
+  loadContent("pages/pants.html", "pants", displayData);
+  loadContent("pages/shorts.html", "shorts", displayData);
+  loadContent("pages/socks.html", "socks", displayData);
+  loadContent("pages/hats.html", "hats", displayData);
+  loadContent("pages/shoes.html", "shoes", displayData);
+  loadContent("pages/accessories.html", "accessories", displayData);
+  initializeProductPage();
+}
+///////////////////////Load all products/////////////////////////
 
 ///////////////////////popupjs/////////////////////////
-async function openPopup(parentElement, index, imgElement) {
-  // console.log("imgElement " + imgElement); // debugging purposes --> issues resolved!
+async function openPopup(parentElement, imgElement) {
   var popup = document.getElementById("popup");
   var popupText = document.querySelector(".popupText");
   var popupTitle = document.querySelector(".popupTitle");
   var popupPrice = document.querySelector(".popupPrice");
   var popupSizes = document.querySelector(".popupSizes");
   var popupImage = document.querySelector(".popupImage");
-  var title = parentElement.querySelectorAll(".card-title");
-  var text = parentElement.querySelectorAll(".card-text");
-  currentIndex = index;
-  // Fetch the price and size from the global productData variable
-  var price = productData[index].PRICE;
-  var size = productData[index].SIZES;
-  popupTitle.innerHTML = title[0].innerHTML;
-  popupText.innerHTML = text[0].innerHTML;
+
+  const productId = parseInt(parentElement.dataset.id);
+  const product = productData.find((p) => parseInt(p.ID) === productId);
+  currentIndex = productId;
+  var price = product.PRICE;
+  var size = product.SIZES;
+  popupTitle.innerHTML = product.NAME;
+  popupText.innerHTML = product.DESCRIPTION;
   popupPrice.innerHTML = `Price: $${price}`;
   popupSizes.innerHTML = `Size: ${size}`;
   popupImage.src = imgElement.src; // Update the img src
@@ -134,9 +161,97 @@ function updateCartTable() {
 
 //we will need some kind of button to call this function
 function emptyCart() {
+  location.reload(); //refreshes the page and deletes the cart
   alert("Cart emptied!");
-  cartItems = [];
-  updateCartTable();
 
   //all they have to do is refresh the page but i guess we can still have this
+}
+
+///////////////////////search form jQuery/////////////////////////
+function initializeProductPage() {
+  document.getElementById("mySearch").addEventListener("keyup", function () {
+    const filter = this.value.toUpperCase();
+    const cards = document.querySelectorAll(".card");
+
+    cards.forEach((card) => {
+      const cardTitle = card
+        .querySelector(".card-title")
+        .textContent.toUpperCase();
+      if (cardTitle.indexOf(filter) > -1) {
+        card.classList.remove("d-none");
+      } else {
+        card.classList.add("d-none");
+      }
+    });
+  });
+
+  document
+    .getElementById("filter-form")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
+      applyFilters();
+    });
+}
+
+function applyFilters() {
+  const sizeFilter = document.getElementById("size").value;
+  const priceFilter = document.getElementById("price").value;
+  const colorFilter = document.getElementById("color").value;
+
+  const filteredProducts = productData.filter((product) => {
+    const color = product.NAME.split(" ")[0].toLowerCase();
+    const size = product.SIZES.trim();
+
+    let display = true;
+
+    if (sizeFilter && size !== sizeFilter) {
+      display = false;
+    }
+
+    if (colorFilter && color !== colorFilter) {
+      display = false;
+    }
+
+    return display;
+  });
+
+  if (priceFilter) {
+    if (priceFilter === "low-high") {
+      filteredProducts.sort(
+        (a, b) => parseFloat(a.PRICE) - parseFloat(b.PRICE)
+      );
+    } else if (priceFilter === "high-low") {
+      filteredProducts.sort(
+        (a, b) => parseFloat(b.PRICE) - parseFloat(a.PRICE)
+      );
+    }
+  }
+
+  updateProductCards(filteredProducts);
+}
+
+function updateProductCards(filteredProducts) {
+  const productCards = document.querySelectorAll(".card");
+
+  productCards.forEach((card) => {
+    const cardId = parseInt(card.dataset.id);
+    const filteredProduct = filteredProducts.find(
+      (product) => parseInt(product.ID) === cardId
+    );
+
+    if (filteredProduct) {
+      const { NAME: productName, DESCRIPTION: productDescription } =
+        filteredProduct;
+
+      const productNameElement = card.querySelector(".card-title");
+      const productDescriptionElement = card.querySelector(".card-text");
+
+      productNameElement.textContent = productName;
+      productDescriptionElement.textContent = productDescription;
+
+      card.classList.remove("d-none");
+    } else {
+      card.classList.add("d-none");
+    }
+  });
 }
